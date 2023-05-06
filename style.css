@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "MabryPro";
+    src: url(./font/MabryPro-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "MabryProBlack";
+    src: url(./font/MabryPro-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "MabryProLight";
+    src: url(./font/MabryPro-Light.ttf) format('truetype');
+}
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    background-color: #90a7ed;
+}
+
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.title-container p {
+    font-family: "MabryProLight", sans-serif;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px 0px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.title-img {
+    height: 20%;
+    width: 20%;
+    padding: 10%;
+}
+
+  /* Style for the user card container */
+.card-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+
+  /* Style for the user card */
+  .user-card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    background-color: #f4f4f1;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  /* Style for the user card heading */
+  .user-card h2 {
+    margin: 0;
+    color: #ff90e8;
+    font-size: 1.8rem;
+    font-family: "MabryPro",sans-serif;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+
+.id {
+    width: 40px;
+    height: 40px;
+    background-image: url(./icon/mark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 5px;
+
+  }
+
+  .label {
+    font-family: "MabryProBlack", sans-serif;
+  }
+
+  /* Style for the user card paragraphs */
+  .user-card p {
+    margin-top: 0;
+    color: #000000;
+    font-size: 1.2rem;
+    font-family: "MabryPro",sans-serif;
+  }
+
+
+  /* Style for the user card on hover */
+  .user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;        
+    }
+}
+
